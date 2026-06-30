@@ -1,0 +1,40 @@
+{
+	"servers": {
+    "filesystem-code": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "./src",
+        "./specs",
+        "./skills",
+        "./prompts",
+        "./tests"
+      ],
+      "type": "stdio"
+    },
+
+    "filesystem-docs": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "./docs/novatech",
+        "./docs/adr",
+        "./docs/runbooks"
+      ],
+      "type": "stdio"
+    },
+
+    "filesystem-corpus": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "./data/retrieval-corpus"
+      ],
+      "type": "stdio"
+    }
+  },
+  "inputs": []
+}
